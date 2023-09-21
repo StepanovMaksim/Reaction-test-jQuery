@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Скорость реакции</title>
+<link type="text/css" rel="stylesheet" href="SpeedR.css"/>
+	 <script src="SpeedR.js"></script>
+
+</head>
+
+<body>
+	<div id="step"> Попытка № 1</div>
+	<form>
+	<input text="text" id="userName" size="20" placeholder="Ведите имя!">
+	<input type="button" id="start" value="Готов!" onclick="startGame()">
+		<p id="textInstr">Для начала теста жмите кнопку "Готов!"</p> 
+		<div id="msg">Ваша скорость реакции: 0 </div>
+	</form>
+	<p id="st">Приготовьтесь!</p>
+	
+	<div>
+	<input type="button"  id="click" value="Жди!" onclick='handleButtonClick(1);'> 
+	<input type="button"  id="clickTwo" value="Жди!" onclick='handleButtonClick(2);'> 
+	<input type="button"  id="clickFree" value="Жди!" onclick='handleButtonClick(3);'> 
+	<br>
+	<input type="button" id="refresh" value="Попробовать еще раз!" onclick="refr();">
+	</div>
+	<ol id="record">
+		<h2>Рекорды</h2>
+		<li>Автор 181 ms</li>
+	</ol>
+</body>
+</html>
